@@ -51,14 +51,51 @@
                 <h2>Profesional Career</h2>
                 <p>Describe your projects in this section. Provide details, accomplishments, or any other relevant
                     information about the projects you have worked on.</p>
+
+                <div class="project-box" onclick="toggleContent('project-content-1')">
+                    <div class="project-title-section">
+                        <h3>Project Title 1</h3>
+                        <div class="expand-btn">+</div>
+                    </div> 
+                    <div id="project-content-1" class="project-content">
+                        <!-- Complete content for Project 1 -->
+                        <p>Complete content for Project 1...</p>
+                    </div>
+                </div>
+                <!-- -->
+
+                <div class="project-box" onclick="toggleContent('project-content-2')">
+                    <div class="project-title-section">
+                        <h3>Project Title 2</h3>
+                        <div class="expand-btn">+</div>
+                    </div> 
+                    <div id="project-content-2" class="project-content">
+                        <!-- Complete content for Project 2 -->
+                        <p>Complete content for Project 2...</p>
+                    </div>
+                </div>
             </div>
 
             <div class="career">
                 <h2>Career</h2>
-                <p>Describe your career in this section. Provide details, achievements, or any other relevant information about your professional journey.</p>
+                <p>Describe your career in this section. Provide details, achievements, or any other relevant
+                    information about your professional journey.</p>
             </div>
         </div>
     </div>
+
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            var projectBox = content.parentElement;
+
+            if (projectBox.classList.contains('open')) {
+                projectBox.classList.remove('open');
+            } else {
+                projectBox.classList.add('open');
+            }
+        }
+    </script>
 
 </body>
 

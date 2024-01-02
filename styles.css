@@ -9,7 +9,7 @@ body {
 .container {
     max-width: 800px;
     margin: 20px auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -104,4 +104,41 @@ h1 {
 
 .fa-linkedin-square {
     color: #007bb6;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+}
+
+.expand-btn {
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: auto; /* Pushes the "+" symbol to the right, aligning it with the title */
+}
+
+.project-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.project-box.open .project-content {
+    display: block;
+}
+
+.project-box.open .expand-btn::after {
+    content: "-";
+}
+
+.project-title-section {
+    display: flex;
+    width: 20%;
+    align-items: center;
 }
