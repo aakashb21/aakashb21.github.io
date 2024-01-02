@@ -43,36 +43,58 @@
             margin: 10px;
         }
 
+        .projects,
+        .career {
+            margin: 10px;
+        }
+
         .image img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
         }
 
-        .description {
+        .description,
+        .projects,
+        .career {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 12px;
+        }
+
+        .projects h2 {
+            color: #333;
+        }
+
+        .career h2 {
+            color: #333;
         }
 
         @media screen and (max-width: 600px) {
+
             /* Adjust styles for smaller screens */
             .container {
                 padding: 10px;
             }
 
             .content {
-                flex-direction: column;
+                display: grid;
+                grid-template-rows: auto auto auto;
+                grid-row-gap: 10px;
             }
 
             .image,
-            .description {
-                flex: none;
+            .description,
+            .projects,
+            .career {
                 width: 100%;
-                margin: 10px 0;
             }
         }
+
+
+
 
         .fa.fa-instagram {
             color: transparent;
@@ -88,8 +110,11 @@
             background-size: 55%;
             background-position: 70% 0;
             background-repeat: no-repeat;
-        }        
-        .fa-linkedin-square { color: #007bb6;}
+        }
+
+        .fa-linkedin-square {
+            color: #007bb6;
+        }
     </style>
 </head>
 
@@ -127,6 +152,17 @@
                     <i class="fa fa-facebook-square fa-2x"></i>
                     <i class="fa fa-linkedin-square fa-2x"></i>
                 </p>
+            </div>
+
+            <div class="projects">
+                <h2>Projects</h2>
+                <p>Describe your projects in this section. Provide details, accomplishments, or any other relevant
+                    information about the projects you have worked on.</p>
+            </div>
+
+            <div class="career">
+                <h2>Career</h2>
+                <p>Describe your career in this section. Provide details, achievements, or any other relevant information about your professional journey.</p>
             </div>
         </div>
     </div>
