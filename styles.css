@@ -133,12 +133,16 @@ h1 {
     display: block;
 }
 
-.project-box.open .expand-btn::after {
+.expand-btn::before {
+    content: "+";
+}
+
+.project-box.open .expand-btn::before {
     content: "-";
 }
 
 .project-title-section {
     display: flex;
-    width: 20%;
+    width: 50%;
     align-items: center;
 }
