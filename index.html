@@ -20,6 +20,10 @@
             max-width: 800px;
             margin: 20px auto;
             overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
@@ -33,21 +37,41 @@
             justify-content: space-between;
         }
 
-        .image {
+        .image,
+        .description {
             flex: 1;
-            order: 1;
             margin: 10px;
         }
 
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         .description {
-            flex: 1;
-            order: 2;
-            margin: 10px;
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            font-size: 12px;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
+            .container {
+                padding: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .image,
+            .description {
+                flex: none;
+                width: 100%;
+                margin: 10px 0;
+            }
         }
 
         .fa.fa-instagram {
