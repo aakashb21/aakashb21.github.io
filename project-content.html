@@ -3,26 +3,63 @@
     <p>Describe your projects in this section. Provide details, accomplishments, or any other relevant
         information about the projects you have worked on.</p>
 
-    <div class="project-box" onclick="toggleContent('project-content-1')">
-        <div class="project-title-section">
-            <h3>HSBC Bank (2015 - 2022)</h3>
-            <div class="expand-btn"></div>
+    <div class="org-list" style="padding: 10px;">
+        <div class="row ">
+            <div class="col-xs-8"> <b class="org-title">HSBC Bank</b></div>
+            <div class="col-xs-4">2015 - 2020</div>
         </div>
-        <div id="project-content-1" class="project-content">
-            <!-- Complete content for Project 1 -->
-            <p>Complete content for Project 1...</p>
+        <br />
+        <div class="row">
+            <div class="col-xs-12">
+                Project contents here !!!
+            </div>
         </div>
     </div>
-    <!-- -->
+    <br>
 
-    <div class="project-box" onclick="toggleContent('project-content-2')">
-        <div class="project-title-section">
-            <h3>Barclays Bank (2022 - At Present)</h3>
-            <div class="expand-btn"></div>
+    <div class="org-list" onclick="toggleDiv('barclaysProjDiv', 'barclaysExpDiv')"
+        title="Click here to view my projects details">
+        <div class="row">
+            <div class="col-xs-8"><b class="org-title">Barclays Bank</b></div>
+            <div class="col-xs-4">2022 - Present</div>
         </div>
-        <div id="project-content-2" class="project-content">
-            <!-- Complete content for Project 2 -->
-            <p>Complete content for Project 2...</p>
+        <br />
+
+        <div class="row" id="barclaysExpDiv">
+            <div class="col-xs-12"> Click here to view my projects details !!! </div>
         </div>
+
+        <div class="row" id="barclaysProjDiv" style="display: none;">
+            <div class="col-xs-12">
+                <div>
+
+                    <ul>
+                        <h6><b>US Consumer Loan Portal (LiLac):</b> </h6>
+                        <p style="text-decoration: underline; color: brown;">Technical Task Accomplished:</p>
+                        <li> OAuth migration using tokenisation. Understanding the downstream apps dependencies, working
+                            out the flow on OAuth tokens for authentication purpose, implementing it using spirngboot,
+                            SOAP and REST API's call.</li>
+                        <li>Tomcat web server upgrade from v7 to v8 using chef cookbooks scripts. A complex task which
+                            involved through understanding of application architecture, infrastructre setup.</li>
+                        <li>Chef code changes for improved CI/CD pipeline deployments. Reduced application deployment
+                            pipeline from 15mins -> 5mins.</li>
+                        <li>Adoption of Vault for storing application passwords / certificates / tokens in secure and
+                            encrypted format, following organizations needs to manage sensitive data securely and
+                            conveniently.</li>
+                        <br>
+                        <p style="text-decoration: underline; color: brown;">Product Analysis Task Accomplished::</p>
+                        <li>Involved in upgrading application authentication and authorization flow.</li>
+                            <li>Collaboration with Fraud team, streamlining fraud rules. Improvements around multi-factor authentication rules.</li>
+                            <li>Product Team were unhappy with the password field, its multi-auth factor Q&A's screen layouts. Was involved in its analysis and improveming user experience around the password field.</li>
+                            <li>Participated in implementing dispute workflow which helps user to raise concern directly form the portal. User screen analysis, backend call analysis.</li>
+
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>

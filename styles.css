@@ -69,12 +69,29 @@ h1 {
     font-size: 12px;
 }
 
+h2 {
+    font-size: 22px;
+}
+
 .projects h2 {
     color: #333;
 }
 
 .career h2 {
     color: #333;
+}
+
+.org-list {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: auto;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding: 10px; 
+    cursor: pointer;
+}
+
+.org-title {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 600px) {
@@ -183,3 +200,4 @@ h1 {
     width: 50%;
     align-items: center;
 }
+
