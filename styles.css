@@ -58,7 +58,7 @@ h1 {
     flex-direction: row;
 }
 
-.barclaysLogo {
+.org2Style {
     max-width: 25%;
     margin-bottom: -15%;
     margin-top: -18%;
@@ -209,7 +209,7 @@ h2 {
         border-radius: 8px;
     }
 
-    .barclaysLogo {
+    .org2Style {
         max-width: 45%;
         margin-bottom: -10%;
         margin-top: -20%;
