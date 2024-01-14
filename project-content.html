@@ -1,32 +1,46 @@
 <div class="projects">
     <h2>Profesional Career</h2>
-   
+    <p style="font-size: 10px; color: lightslategrey;">Click on each project section to expand or hide the project
+        details</p>
 
-    <div class="org-list" style="padding: 10px;">
+    <div class="org-list" onclick="toggleDiv()">
+
         <div class="row ">
             <div class="col-xs-8"> <b class="org-title">HSBC Bank</b></div>
-            <div class="col-xs-4">2015 - 2020</div>
+            <div class="col-xs-4">2015 - 2022</div>
         </div>
         <br />
-        <div class="row">
-            <div class="col-xs-12">
-                Project contents here !!!
+        <div class="row" id="hsbcExpDiv">
+            <div class="col-xs-8">
+                Project details here !!!
             </div>
+            <!-- <div id="barclaysLogoDiv">
+                <img src="barclays-logo.png" alt="" class="barclaysLogo">
+            </div> -->
         </div>
+        <!-- <div class="row" id="hsbcProjDiv" style="display: none;">
+            <div class="col-xs-12">
+                <div>
+                    <ul>
+                        <h6><b></b></h6>
+                    </ul>
+                </div>
+            </div>
+
+        </div> -->
     </div>
     <br>
 
-    <div class="org-list" onclick="toggleDiv('barclaysProjDiv', 'barclaysExpDiv', 'barclaysLogoDiv')"
-        title="Click here to view my projects details">
-        
+    <div class="org-list" onclick="toggleDiv('barclaysProjDiv', 'barclaysExpDiv', 'barclaysLogoDiv')">
+
         <div class="row">
             <div class="col-xs-8"><b class="org-title">Barclays Bank</b></div>
             <div class="col-xs-4">At Present</div>
         </div>
         <br />
         <div class="row" id="barclaysExpDiv">
-            <div class="col-xs-8"> Project Details here !!!</div>
-            <div id="barclaysLogoDiv" >
+            <div class="col-xs-8"> Project details here !!!</div>
+            <div id="barclaysLogoDiv">
                 <img src="barclays-logo.png" alt="" class="barclaysLogo">
             </div>
         </div>
@@ -61,6 +75,6 @@
             </div>
         </div>
 
-        
+
 
     </div>
