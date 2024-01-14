@@ -58,6 +58,13 @@ h1 {
     flex-direction: row;
 }
 
+.barclaysLogo {
+    max-width: 25%;
+    margin-bottom: -15%;
+    margin-top: -18%;
+    margin-left: -10%;
+}
+
 .description,
 .projects,
 .career,
@@ -86,7 +93,7 @@ h2 {
     height: auto;
     border-radius: 5px;
     padding-top: 5px;
-    padding: 10px; 
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -117,13 +124,21 @@ h2 {
     }
 
     .profile-content {
-        flex-direction: column; /* Change to a column layout for profile content */
+        flex-direction: column;
+        /* Change to a column layout for profile content */
     }
 
     .image img {
         max-width: 100%;
         height: auto;
         border-radius: 8px;
+    }
+
+    .barclaysLogo {
+        max-width: 45%;
+        margin-bottom: -10%;
+        margin-top: -20%;
+        margin-left: 50%;
     }
 }
 
@@ -175,7 +190,8 @@ h2 {
     cursor: pointer;
     font-size: 18px;
     margin-right: 10px;
-    margin-left: auto; /* Pushes the "+" symbol to the right, aligning it with the title */
+    margin-left: auto;
+    /* Pushes the "+" symbol to the right, aligning it with the title */
 }
 
 .project-content {
@@ -200,4 +216,3 @@ h2 {
     width: 50%;
     align-items: center;
 }
-

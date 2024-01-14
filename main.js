@@ -50,16 +50,19 @@ fetch('career-goals-content.html')
         document.getElementById('career-goals-content').innerHTML = html;
     });
 
-function toggleDiv(divId1, divId2) {
+function toggleDiv(divId1, divId2, divId3) {
     var targetDiv1 = document.getElementById(divId1);
     var targetDiv2 = document.getElementById(divId2);
+    var targetDiv3 = document.getElementById(divId3);
 
     if (targetDiv1.style.display === 'none' || targetDiv1.style.display === '') {
         targetDiv1.style.display = 'block';
         targetDiv2.style.display = 'none';
+        targetDiv3.style.display = 'none';
     } else {
         targetDiv1.style.display = 'none';
         targetDiv2.style.display = 'block';
+        targetDiv3.style.display = 'block';
     }
 }
 
