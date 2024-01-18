@@ -3,78 +3,136 @@
     <p style="font-size: 10px; color: lightslategrey;">Click on each project section to expand or hide the project
         details</p>
 
-    <div class="org-list" onclick="toggleDiv()">
+
+        <div class="org-list" onclick="toggleDiv('org2ProjDetails', 'org2div', 'org2LogoDiv')">
+
+            <div class="row">
+                <div class="col-xs-8"><b class="org-title">Barclays Bank</b></div>
+                <div class="col-xs-4">At Present</div>
+            </div>
+            <br />
+            <div class="row" id="org2div">
+                <div class="col-xs-8"> Project details here !!!</div>
+                <div id="org2LogoDiv">
+                    <img src="org2-logo.png" alt="" class="org2Style">
+                </div>
+            </div>
+            <div class="row" id="org2ProjDetails" style="display: none;">
+                <div class="col-xs-12">
+                    <div style="margin-left: 40px;">
+                        <p><b>Designation: </b>BA4 - Developer </p>
+                        <p><b>Roles & Responsibilities: </b> Senior Developer / Product Analyst</p> <br>
+                        <p><b>Project 1: </b>US Consumer Loan Portal (LiLac)</p>
+                        <p><b>Description: </b>US Consumer Loans portal, used for re-payment for credit-cards outstanding loan bills.</p>
+                        <br>
+                        <p><b>Project 2: </b>US Deposit Project </p>
+                        <p><b>Description: </b> A portal used by US consumer for opening deposit account, opening CD accounts with attractive interest rates available.</p>
+                    </div> <br>
+                    <div>
+                        <ul>
+                            <p style="text-decoration: underline; color: brown;">Technical Task Accomplished:</p>
+                            <li> Executed OAuth migration with tokenization, ensuring seamless authentication in downstream
+                                apps through Spring Boot, SOAP and REST API calls.</li>
+                            <li>Upgraded Tomcat web server from v7 to v8 using chef cookbook scripts, which required a deep
+                                understanding of application architecture and infrastructure setup.</li>
+                            <li>Optimized Chef code for enhanced CI/CD pipeline deployments, reducing deployment time from
+                                15 minutes to 5 minutes.</li>
+                            <li>Implemented Vault for secure storage of application passwords, certificates, and tokens,
+                                aligning with organizational requirements for managing sensitive data securely.</li>
+                            <br>
+                            <p style="text-decoration: underline; color: brown;">Product Analysis Task Accomplished::</p>
+                            <li>Engaged in enhancing the authentication and authorization flow of the application.</li>
+                            <li>Teamed up with the Fraud department to enhance fraud rules, with a specific emphasis on
+                                refining password authentication rules and subsequently optimizing multi-factor
+                                authentication criteria.</li>
+                            <li>Addressed concerns raised by the Product Team regarding the password field and its
+                                associated multi-authentication factor Q&A screen layouts. Conducted analysis and
+                                implemented improvements to enhance the user experience.</li>
+                            <li>Played a key role in the implementation of a dispute workflow, allowing users to raise
+                                concerns directly from the portal. Conducted thorough analysis of user screens and backend
+                                calls to ensure seamless functionality.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+    <div class="org-list" onclick="toggleDiv('org1ProjDetails', 'org1div', 'org1LogoDiv')">
 
         <div class="row ">
             <div class="col-xs-8"> <b class="org-title">HSBC Bank</b></div>
             <div class="col-xs-4">2015 - 2022</div>
         </div>
         <br />
-        <div class="row" id="hsbcExpDiv">
+        <div class="row" id="org1div">
             <div class="col-xs-8">
                 Project details here !!!
             </div>
-            <!-- <div id="org2LogoDiv">
-                <img src="org2-logo.png" alt="" class="org2Style">
-            </div> -->
-        </div>
-        <!-- <div class="row" id="hsbcProjDiv" style="display: none;">
-            <div class="col-xs-12">
-                <div>
-                    <ul>
-                        <h6><b></b></h6>
-                    </ul>
-                </div>
-            </div>
-
-        </div> -->
-    </div>
-    <br>
-
-    <div class="org-list" onclick="toggleDiv('org2ProjDetails', 'org2div', 'org2LogoDiv')">
-
-        <div class="row">
-            <div class="col-xs-8"><b class="org-title">Barclays Bank</b></div>
-            <div class="col-xs-4">At Present</div>
-        </div>
-        <br />
-        <div class="row" id="org2div">
-            <div class="col-xs-8"> Project details here !!!</div>
-            <div id="org2LogoDiv">
-                <img src="org2-logo.png" alt="" class="org2Style">
+            <div id="org1LogoDiv">
+                <img src="org1-logo.png" alt="" class="org1Style">
             </div>
         </div>
-        <div class="row" id="org2ProjDetails" style="display: none;">
+        <div class="row" id="org1ProjDetails" style="display: none;">
             <div class="col-xs-12">
+            
+                <div style="margin-left: 40px;">
+                    <p><b>Designation: </b>Consultant Specialist </p>
+                    <p><b>Roles & Responsibilities: </b> Senior Developer / Team Leader</p> <br>
+                    <p><b>Project 1: </b>eShare – Document Management App</p>
+                    <p><b>Description: </b>Providing a document management and workflow solution that streamlines and
+                        standardizes the Global Banking documentation processes and an improved business process through
+                        shared global storage of documents and emails for deals, clients and business units.</p>
+                    <br>
+                    <p><b>Project 2: </b>Darwin – Client Exit Program App</p>
+                    <p><b>Description: </b>An Application responsible for client exit programs which do not satisfy HSBC
+                        defined fraud category rules and regulations.</p>
+                </div> <br>
                 <div>
                     <ul>
-                        <h6><b>US Consumer Loan Portal (LiLac):</b> </h6>
-                        <p style="text-decoration: underline; color: brown;">Technical Task Accomplished:</p>
-                        <li> Executed OAuth migration with tokenization, ensuring seamless authentication in downstream
-                            apps through Spring Boot, SOAP and REST API calls.</li>
-                        <li>Upgraded Tomcat web server from v7 to v8 using chef cookbook scripts, which required a deep
-                            understanding of application architecture and infrastructure setup.</li>
-                        <li>Optimized Chef code for enhanced CI/CD pipeline deployments, reducing deployment time from
-                            15 minutes to 5 minutes.</li>
-                        <li>Implemented Vault for secure storage of application passwords, certificates, and tokens,
-                            aligning with organizational requirements for managing sensitive data securely.</li>
+                        <p style="text-decoration: underline; color: brown;">Technical Task Accomplished::</p>
+                        
+                        <li>Developed key modules for eShareAdmin portal, involving UI design in Angular4 and backend API design with Spring.</li>
+                        <li>Led the Unix server evrgreening initiative, migrating a Red Hat server to the latest version, streamlining future 
+                            enhancements and bug fixes.</li>
+                        <li>Orchestrated roleswap activities, ensuring seamless application swaps between data centers within predefined timelines, 
+                            collaborating with infra teams for successful releases.</li>
+                        <li>Conducted a self-analysis and implemented upgrades to the UI application, transitioning from Angular v4 to v10.</li>
+                        <li>Proficient in IBM FileNet, a pivotal component of our application, utilized for document management, configuring document classes, 
+                            and properties through FileNet API in eShare.</li>
+                        <br>
+                        
+                        <div style="text-decoration: underline;">For Darwin App:</div>
+                        <li>Sole developer for the Darwin project, handling development tasks, analysis, and production support.</li>
+                        <li>Was assigned to finalize the development of a long-pending Darwin module based on the Dojo framework. Successfully completed the 
+                            task within a span of 3 months.</li>
+                        <li>Mastered tools such as IBM Case Manager, Process Tracker, Navigator, and FileNet while addressing Darwin issues with minimal 
+                            resources and support.</li>
+                        <li>Conducted comprehensive analysis and resolved numerous impactful Darwin issues, enhancing customer usability.</li>
+                        <br>
+                        <li>Automated the cumbersome release planning document filing process for developers.</li>
+                        <li>Developed a chatbot for seamless timesheet filling and scrum call reminders, providing a streamlined one-click solution.</li>
                         <br>
                         <p style="text-decoration: underline; color: brown;">Product Analysis Task Accomplished::</p>
-                        <li>Engaged in enhancing the authentication and authorization flow of the application.</li>
-                        <li>Teamed up with the Fraud department to enhance fraud rules, with a specific emphasis on
-                            refining password authentication rules and subsequently optimizing multi-factor
-                            authentication criteria.</li>
-                        <li>Addressed concerns raised by the Product Team regarding the password field and its
-                            associated multi-authentication factor Q&A screen layouts. Conducted analysis and
-                            implemented improvements to enhance the user experience.</li>
-                        <li>Played a key role in the implementation of a dispute workflow, allowing users to raise
-                            concerns directly from the portal. Conducted thorough analysis of user screens and backend
-                            calls to ensure seamless functionality.</li>
+                        <li>Analyzed user needs, created clear user stories, and improved requirement gathering processes.</li>
+                        <li>Investigated and fixed user-reported issues efficiently, using Root Cause Analysis (RCA) and implementing structured development plans.</li>
+                        <li>Enhanced current application features for better user experience, collaborating with cross-functional teams for successful implementation.</li>
+                        <li>Identified and automated various application features, boosting efficiency and minimizing manual tasks.</li>
+                        <li>Explored ways to refine and optimize existing features, aligning them with user needs and industry best practices.</li>
+                        <li>Actively contributed to agile development, incorporating user feedback for continuous product improvement.</li>
                     </ul>
                 </div>
+
+                <div>
+                    <p style="text-decoration: underline; color: brown;">Tech Stack Used:</p>
+                    <p>UI: </p>
+                </div>
+                
+                
             </div>
+
         </div>
-
-
-
     </div>
+
+</div>

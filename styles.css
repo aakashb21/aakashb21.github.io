@@ -58,12 +58,21 @@ h1 {
     flex-direction: row;
 }
 
-.org2Style {
-    max-width: 25%;
+.org1Style {
+    max-width: 15%;
     margin-bottom: -15%;
     margin-top: -18%;
-    margin-left: -10%;
+    margin-left: -1%;
 }
+
+.org2Style {
+    max-width: 22%;
+    margin-bottom: -15%;
+    margin-top: -18%;
+    margin-left: -7%;
+}
+
+
 
 .description,
 .projects,
@@ -209,10 +218,17 @@ h2 {
         border-radius: 8px;
     }
 
-    .org2Style {
-        max-width: 45%;
+    .org1Style {
+        max-width: 30%;
         margin-bottom: -10%;
         margin-top: -20%;
-        margin-left: 50%;
+        margin-left: 60%;
+    }
+
+    .org2Style {
+        max-width: 40%;
+        margin-bottom: -10%;
+        margin-top: -20%;
+        margin-left: 55%;
     }
 }
