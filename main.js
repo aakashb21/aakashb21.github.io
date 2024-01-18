@@ -59,19 +59,10 @@ function toggleDiv(divId1, divId2, divId3) {
         targetDiv1.style.display = 'block';
         targetDiv2.style.display = 'none';
         targetDiv3.style.display = 'none';
+        
     } else {
         targetDiv1.style.display = 'none';
         targetDiv2.style.display = 'block';
         targetDiv3.style.display = 'block';
     }
 }
-
-/* function toggleDiv(divId) {
-    var targetDiv = document.getElementById(divId);
-
-    if (targetDiv.style.display === 'none' || targetDiv.style.display === '') {
-        targetDiv.style.display = 'block';
-    } else {
-        targetDiv.style.display = 'none';
-    }
-} */

@@ -185,6 +185,12 @@ h2 {
     align-items: center;
 }
 
+.mobileView {
+    text-align: end; 
+    font-size: 10px; 
+    color: chocolate;
+}
+
 @media screen and (max-width: 600px) {
 
     /* Adjust styles for smaller screens */
@@ -230,5 +236,11 @@ h2 {
         margin-bottom: -10%;
         margin-top: -20%;
         margin-left: 55%;
+    }
+
+    .mobileView {
+        text-align: center; 
+        font-size: 10px; 
+        color: chocolate;
     }
 }
