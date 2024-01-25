@@ -59,10 +59,48 @@ function toggleDiv(divId1, divId2, divId3) {
         targetDiv1.style.display = 'block';
         targetDiv2.style.display = 'none';
         targetDiv3.style.display = 'none';
-        
+
     } else {
         targetDiv1.style.display = 'none';
         targetDiv2.style.display = 'block';
         targetDiv3.style.display = 'block';
     }
+}
+
+
+function toolTip(clicked) {
+
+    var clickedImg = document.getElementById(clicked);
+    clickedImg.style.display = (clickedImg.style.display === "block") ? "none" : "block";
+
+    switch (clicked) {
+        case "instaClick":
+            fbClick.style.display = "none";
+            linkClick.style.display = "none";
+            birthClick.style.display = "none";
+            break;
+        case "fbClick":
+            instaClick.style.display = "none";
+            linkClick.style.display = "none";
+            birthClick.style.display = "none";
+            break;
+        case "linkClick":
+            instaClick.style.display = "none";
+            fbClick.style.display = "none";
+            birthClick.style.display = "none";
+            break;
+        case "birthClick":
+            instaClick.style.display = "none";
+            fbClick.style.display = "none";
+            linkClick.style.display = "none";
+            break;
+            case "others":
+            instaClick.style.display = "none";
+            fbClick.style.display = "none";
+            linkClick.style.display = "none";
+            birthClick.style.display = "none";
+            break;
+    }
+
+
 }
