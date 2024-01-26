@@ -50,6 +50,17 @@ fetch('career-goals-content.html')
         document.getElementById('career-goals-content').innerHTML = html;
     });
 
+fetch('portfolio-disclaimer.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('portfolio-disclaimer').innerHTML = html;
+    });
+
+function toggleDisc(discText) {
+    var discText = document.getElementById(discText);    
+    discText.style.display = (discText.style.display === "block") ? "none" : "block";
+}
+
 function toggleDiv(divId1, divId2, divId3) {
     var targetDiv1 = document.getElementById(divId1);
     var targetDiv2 = document.getElementById(divId2);
@@ -93,12 +104,6 @@ function toolTip(clicked) {
             instaClick.style.display = "none";
             fbClick.style.display = "none";
             linkClick.style.display = "none";
-            break;
-            case "others":
-            instaClick.style.display = "none";
-            fbClick.style.display = "none";
-            linkClick.style.display = "none";
-            birthClick.style.display = "none";
             break;
     }
 
