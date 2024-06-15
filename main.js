@@ -1,5 +1,6 @@
 var openProjectId = null;
 
+
 function toggleContent(contentId) {
     var content = document.getElementById(contentId);
     var projectBox = content.parentElement;
@@ -77,6 +78,25 @@ function toggleDiv(divId1, divId2, divId3) {
         targetDiv3.style.display = 'block';
     }
 }
+
+function calculateExperience(test) {
+    console.log("Called ......")
+    // Hard-code the start date (e.g., January 1, 2015)
+    const startDate = new Date('2015-11-02');
+    const currentDate = new Date();
+
+    // Calculate the difference in milliseconds
+    const diffInMilliseconds = currentDate - startDate;
+
+    // Convert milliseconds to years
+    const millisecondsInYear = 1000 * 60 * 60 * 24 * 365.25; // accounting for leap years
+    const yearsOfExperience = Math.floor(diffInMilliseconds / millisecondsInYear);
+
+    // Display the years of experience on the webpage
+    document.getElementById('experience').textContent = yearsOfExperience;
+    document.getElementById('experience2').textContent = yearsOfExperience;
+}
+
 
 
 function toolTip(clicked) {
