@@ -45,6 +45,12 @@ fetch('career-content.html')
         document.getElementById('career-content').innerHTML = html;
     });
 
+fetch('case-studies.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('case-studies').innerHTML = html;
+    });
+
 fetch('career-goals-content.html')
     .then(response => response.text())
     .then(html => {
