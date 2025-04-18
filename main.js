@@ -135,3 +135,22 @@ function toolTip(clicked) {
 
 
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Retrieve the counter value from localStorage
+    let counter = localStorage.getItem("pageCounter"); 
+
+    // If no counter exists, initialize it to 0
+    if (!counter) {
+        counter = 0;
+    }
+
+    // Increment the counter
+    counter++;
+
+    // Save the updated counter back to localStorage
+    localStorage.setItem("pageCounter", counter);
+
+    // Display the counter in the span
+    document.getElementById("page-counter").textContent = `${counter}`;
+});
